@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido embebido </title>
+</head>
+<!-- 
+    DPR (Device Pixel Ratio)
+        Es la relación que existe entre los píxeles reales que tiene el dispositivo y los píxeles que tenemos disponibles para "pintar" contenido
+    DPR = pixeles reales / pixeles disponibles
+ -->
+<body>
+    <h1>Contenido embebido</h1>
+    <img src="/contenido-embebido/assets/images/nala.png" alt="Gata de logo">
+    <img src="/contenido-embebido/assets/images/Pikachu.gif" alt="Picachu bailando">
+    <img src="/contenido-embebido/assets/images/733547.svg" alt="logo de facebook">
+    <h2>Device Pixel Ratio</h2>
+     <img src="/contenido-embebido/assets/images/portada.jpg" alt="portada"> 
+    <h2>Device Pixel Ratio 2</h2>
+    <img srcset="
+    /contenido-embebido/assets/images/portada.webp, 
+    /contenido-embebido/assets/images/portada-mobile.jpg 2x" alt="Portadas">
+    <h2>Picture</h2>
+    <picture>
+        <source srcset="
+        /contenido-embebido/assets/images/portada-mobile.webp" media="(max-width:1200px)">
+        <img src="/contenido-embebido/assets/images/portada.webp" alt="Portada">
+    </picture>
+    <h2>Audio</h2>
+    <audio src="/contenido-embebido/assets/audio/oomiee.mp3" controls autoplay muted></audio>
+    <h2>Video</h2>
+    <video src="/contenido-embebido/assets/video/Creux De Van.mp4" controls autoplay muted loop poster="/contenido-embebido/assets/images/nala.png"></video>
+    <h2>iframes</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/w6Qn_JB9I_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Figure</h2>
+    <h2>Gatos</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero vitae perspiciatis provident suscipit cum magnam in optio corrupti dolores animi odio quos nemo, distinctio quis dolorem commodi obcaecati libero! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum dicta laboriosam itaque, doloribus aut rerum sunt sequi reprehenderit cum, incidunt saepe quos quo. Nam repellendus tenetur reiciendis! Voluptates, eligendi sapiente.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci eius ipsum harum necessitatibus libero amet voluptates earum, perferendis corrupti repudiandae repellendus blanditiis tempora minus dicta inventore provident quos beatae dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed asperiores amet perspiciatis iusto exercitationem. Explicabo, autem expedita! Odit cumque autem blanditiis fugiat aliquid corrupti ut nemo excepturi aperiam. Recusandae, iure.</p>
+    <figure>
+        <img src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+        alt="gato tumbado">
+    <figcaption>Gato común tumbado</figcaption>
+    </figure>
+</body>
+</html>
